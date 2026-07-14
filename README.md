@@ -27,7 +27,7 @@ Status classification is fully automatic. The collector keeps the latest detecte
 ## GitHub setup
 
 1. Push this repository to GitHub.
-2. Under **Settings → Pages**, select **GitHub Actions** as the source.
+2. Under **Settings → Pages**, select **Deploy from a branch**, then `data` and `/ (root)`.
 3. Run **Update patch dashboard** once, or wait for the hourly schedule.
 
-`update.yml` commits changed status data to `main`; `pages.yml` deploys the static site after each push.
+`update.yml` restores the last generated status, runs the collector, and publishes a complete site snapshot to the `data` branch. The source branch remains free of hourly generated commits.
