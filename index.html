@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hourly status of Linux zh_CN documentation patches">
+  <title>What's cooking in zh_CN</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f6f8fa; --panel:#fff; --text:#1f2328; --muted:#656d76; --line:#d0d7de; --link:#0969da; --green:#1a7f37; --amber:#9a6700; --blue:#0969da; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#0d1117; --panel:#161b22; --text:#e6edf3; --muted:#8b949e; --line:#30363d; --link:#58a6ff; --green:#3fb950; --amber:#d29922; --blue:#58a6ff; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace; }
+    main { width:min(1100px,calc(100% - 2rem)); margin:3rem auto; }
+    header { display:flex; align-items:flex-end; justify-content:space-between; gap:1rem; border-bottom:1px solid var(--line); padding-bottom:1.25rem; }
+    h1 { margin:0; font-size:clamp(1.45rem,4vw,2rem); } h2 { margin:2.25rem 0 .75rem; font-size:1.1rem; }
+    p { margin:.35rem 0; } .muted,.meta { color:var(--muted); } a { color:var(--link); }
+    nav { display:flex; flex-wrap:wrap; gap:.5rem; margin:1rem 0; }
+    nav button { border:1px solid var(--line); border-radius:999px; padding:.35rem .7rem; background:var(--panel); color:var(--text); cursor:pointer; font:inherit; }
+    nav button.active { border-color:var(--link); color:var(--link); }
+    .series { padding:1rem 1.15rem; margin:.7rem 0; border:1px solid var(--line); border-radius:8px; background:var(--panel); }
+    .series-head { display:flex; justify-content:space-between; gap:1rem; align-items:flex-start; }
+    .series h3 { margin:0; font-size:1rem; } .badge { white-space:nowrap; font-weight:600; }
+    [data-status="cooking"] .badge { color:var(--amber); } [data-status="cold"] .badge { color:var(--blue); } [data-status="applied"] .badge { color:var(--green); }
+    .history { display:flex; flex-wrap:wrap; gap:.5rem 1.25rem; margin-top:.7rem; }
+    details { margin:0; } summary { cursor:pointer; color:var(--muted); }
+    ol { margin:.6rem 0 0; padding-left:1.7rem; } li { margin:.25rem 0; overflow-wrap:anywhere; }
+    .empty,.error { border:1px dashed var(--line); border-radius:8px; padding:2rem; text-align:center; color:var(--muted); }
+    footer { border-top:1px solid var(--line); margin-top:3rem; padding-top:1rem; color:var(--muted); }
+    @media(max-width:650px) { main{margin:1.5rem auto} header,.series-head{display:block}.badge{display:block;margin-top:.4rem} }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div><h1>What's cooking in zh_CN</h1><p class="muted">Linux documentation translation patch status</p></div>
+    <p id="updated" class="meta">Loading…</p>
+  </header>
+  <nav id="filters" aria-label="Filter patch series"></nav>
+  <div id="content" aria-live="polite"><p class="empty">Loading patch status…</p></div>
+  <footer>
+    <p>Generated hourly from <a href="https://lore.kernel.org/linux-doc/">linux-doc on lore</a> and <a href="https://git.kernel.org/pub/scm/linux/kernel/git/alexs/linux.git/log/?h=docs-next">Alex Shi's docs-next tree</a>.</p>
+    <p>Series are classified automatically by comparing lore patch subjects with the docs-next commit history.</p>
+  </footer>
+</main>
+<script>
+const labels={cooking:"Cooking",cold:"Cold",applied:"Applied"};
+const order=["cooking","cold","applied"];
+let data, active="all";
+const esc=value=>String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function drawFilters(){
+  const counts=Object.fromEntries(order.map(s=>[s,data.series.filter(x=>x.status===s).length]));
+  document.querySelector("#filters").innerHTML=[`<button data-filter="all">All (${data.series.length})</button>`,...order.map(s=>`<button data-filter="${s}">${labels[s]} (${counts[s]})</button>`)].join("");
+  document.querySelectorAll("nav button").forEach(b=>{ b.classList.toggle("active",b.dataset.filter===active); b.onclick=()=>{active=b.dataset.filter;drawFilters();draw()}; });
+}
+function card(item){
+  const patches=item.patches.map(p=>`<li><a href="${esc(p.url)}">${esc(p.subject)}</a></li>`).join("");
+  const refs=(item.references||[]).map(r=>` · <a href="${esc(r)}">discussion</a>`).join("");
+  const previous=item.previous_versions||[];
+  const history=previous.length?`<details><summary>${previous.length} previous version${previous.length===1?"":"s"}</summary><ol>${previous.map(v=>`<li><a href="${esc(v.source)}">v${v.version} · ${esc(v.date)}</a> — ${esc(v.title)} (${v.archived_messages} archived message${v.archived_messages===1?"":"s"})</li>`).join("")}</ol></details>`:"";
+  return `<article class="series" data-status="${esc(item.status)}">
+    <div class="series-head"><div><h3>${esc(item.author)} · ${esc(item.title)}</h3><p class="meta">${esc(item.date)} · v${item.version} · ${item.total} commit${item.total===1?"":"s"}</p></div><span class="badge">${esc(labels[item.status]||item.status)}</span></div>
+    <p>${esc(item.note)}</p><p><a href="${esc(item.source)}">source</a>${refs}</p>
+    <div class="history"><details><summary>${item.patches.length} archived message${item.patches.length===1?"":"s"} · current</summary><ol>${patches}</ol></details>${history}</div>
+  </article>`;
+}
+function draw(){
+  const shown=active==="all"?data.series:data.series.filter(x=>x.status===active);
+  const grouped=order.map(status=>{const items=shown.filter(x=>x.status===status);return items.length?`<section><h2>[${labels[status]}]</h2>${items.map(card).join("")}</section>`:""}).join("");
+  document.querySelector("#content").innerHTML=grouped||'<p class="empty">No matching patch series.</p>';
+}
+fetch("data/status.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json()}).then(value=>{
+  data=value; document.querySelector("#updated").textContent=`Updated ${new Date(data.generated_at).toLocaleString()}`; drawFilters(); draw();
+}).catch(error=>{document.querySelector("#updated").textContent="Update unavailable";document.querySelector("#content").innerHTML=`<p class="error">Could not load status data: ${esc(error.message)}</p>`});
+</script>
+</body>
+</html>
