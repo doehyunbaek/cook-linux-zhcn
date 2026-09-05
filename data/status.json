@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-14T16:48:29+00:00",
+  "generated_at": "2026-09-05T16:24:12+00:00",
   "source": "https://lore.kernel.org/linux-doc/",
   "tree": "https://git.kernel.org/pub/scm/linux/kernel/git/alexs/linux.git",
-  "docs_next_revision": "1a0364f09c1311dad5ad1ccba7e169a412f6b547",
+  "docs_next_revision": "ba839bfe38d0ac2d8cbdc1272e2408dc35dafa6a",
   "series": [
     {
       "key": "0d624e16a88d",
@@ -54,378 +54,444 @@
         {
           "version": 1,
           "date": "2026-07-08",
-          "title": "docs/zh_CN: update rust documentation translations",
-          "source": "https://lore.kernel.org/linux-doc/cover.1783480076.git.ben.guo@openatom.club/",
-          "archived_messages": 5
+          "title": "docs/zh_CN: Update rust/general-information.rst translation",
+          "source": "https://lore.kernel.org/linux-doc/9104e9b6a59f06ec514010e61aa240c343bead2a.1783480076.git.ben.guo@openatom.club/",
+          "archived_messages": 1
         }
       ]
     },
     {
-      "key": "1df10cfc2229",
-      "author": "Ethan Nelson-Moore",
-      "email": "enelsonmoore@gmail.com",
-      "date": "2026-06-13",
+      "key": "3b5ea70d1e39",
+      "author": "Weijie Yuan",
+      "email": "wy@wyuan.org",
+      "date": "2026-09-05",
       "version": 2,
-      "total": 1,
-      "title": "docs/zh_CN: fix CONFIG_CONPAT typo for CONFIG_COMPAT",
+      "total": 2,
+      "title": "docs/zh_CN: update maintainer/configure-git.rst",
       "patches": [
         {
-          "subject": "[PATCH v2] docs/zh_CN: fix CONFIG_CONPAT typo for CONFIG_COMPAT",
-          "url": "https://lore.kernel.org/linux-doc/20260613183737.11434-1-enelsonmoore@gmail.com/",
+          "subject": "[PATCH v2 0/2] docs/zh_CN: update maintainer/configure-git.rst",
+          "url": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org/",
+          "part": 0
+        },
+        {
+          "subject": "[PATCH v2 1/2] docs/zh_CN: sync maintainer/configure-git with upstream",
+          "url": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-1-ab194db8c6b9@wyuan.org/",
           "part": 1
+        },
+        {
+          "subject": "[PATCH v2 2/2] docs/zh_CN: improve maintainer/pull-requests translation",
+          "url": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-2-ab194db8c6b9@wyuan.org/",
+          "part": 2
         }
       ],
-      "source": "https://lore.kernel.org/linux-doc/20260613183737.11434-1-enelsonmoore@gmail.com/",
-      "status": "applied",
-      "note": "Applied.",
+      "source": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org/",
+      "status": "cooking",
+      "note": "Needs review.",
       "references": [],
       "previous_versions": [
         {
           "version": 1,
-          "date": "2026-06-13",
-          "title": "docs/zh_CN: fix CONFIG_CGROUP typo for CONFIG_CGROUPS",
-          "source": "https://lore.kernel.org/linux-doc/20260613211300.86016-1-enelsonmoore@gmail.com/",
+          "date": "2026-08-23",
+          "title": "docs/zh_CN: update maintainer/configure-git.rst translation",
+          "source": "https://lore.kernel.org/linux-doc/20260823-configure-git-v1-1-3c65eefcc585@wyuan.org/",
+          "archived_messages": 1
+        }
+      ]
+    },
+    {
+      "key": "5d07e47bd930",
+      "author": "Yukai Wu",
+      "email": "xiaoyewuz.ruster@gmail.com",
+      "date": "2026-08-29",
+      "version": 2,
+      "total": 1,
+      "title": "docs/zh_CN: Update arch/riscv/patch-acceptance.rst translation",
+      "patches": [
+        {
+          "subject": "[PATCH v2] docs/zh_CN: Update arch/riscv/patch-acceptance.rst translation",
+          "url": "https://lore.kernel.org/linux-doc/20260829022344.192491-1-xiaoyewuz.Ruster@gmail.com/",
+          "part": 1
+        }
+      ],
+      "source": "https://lore.kernel.org/linux-doc/20260829022344.192491-1-xiaoyewuz.Ruster@gmail.com/",
+      "status": "cooking",
+      "note": "Needs review.",
+      "references": [],
+      "previous_versions": [
+        {
+          "version": 1,
+          "date": "2026-08-29",
+          "title": "docs/zh_CN: Update arch/riscv/vm-layout.rst translation",
+          "source": "https://lore.kernel.org/linux-doc/20260829041542.256360-1-xiaoyewuz.Ruster@gmail.com/",
           "archived_messages": 1
         },
         {
           "version": 1,
-          "date": "2026-06-10",
-          "title": "docs/zh_CN: fix CONFIG_CONPAT typo for CONFIG_COMPAT",
-          "source": "https://lore.kernel.org/linux-doc/20260610231836.186610-1-enelsonmoore@gmail.com/",
+          "date": "2026-08-28",
+          "title": "docs/zh_CN: Update arch/riscv/patch-acceptance.rst translation",
+          "source": "https://lore.kernel.org/linux-doc/20260828061834.3645176-1-xiaoyewuz.Ruster@gmail.com/",
           "archived_messages": 1
         }
       ]
     },
     {
-      "key": "3f60b30366ed",
-      "author": "Yan Zhu",
-      "email": "zhuyan2015@qq.com",
-      "date": "2026-05-29",
-      "version": 2,
-      "total": 1,
-      "title": "docs/zh_CN: update admin-guide/index.rst translation",
-      "patches": [
-        {
-          "subject": "[PATCH v2] docs/zh_CN: update admin-guide/index.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_FCA3F4312E849777081742CBAF2CD6BBA007@qq.com/",
-          "part": 1
-        }
-      ],
-      "source": "https://lore.kernel.org/linux-doc/tencent_FCA3F4312E849777081742CBAF2CD6BBA007@qq.com/",
-      "status": "applied",
-      "note": "Applied.",
-      "references": [],
-      "previous_versions": [
-        {
-          "version": 1,
-          "date": "2026-05-10",
-          "title": "docs/zh_CN: update admin-guide/index.rst translation",
-          "source": "https://lore.kernel.org/linux-doc/tencent_7ADF2D1EBD8EAD2028BC93BA7858EA655D0A@qq.com/",
-          "archived_messages": 1
-        }
-      ]
-    },
-    {
-      "key": "46e1e3c93f98",
-      "author": "chengyaqiang",
-      "email": "chengyaqiang@chengyaqiang.com",
-      "date": "2026-05-22",
+      "key": "5e4104d6fe9e",
+      "author": "Jiaming Ouyang",
+      "email": "jiamingouyang13@gmail.com",
+      "date": "2026-08-29",
       "version": 1,
       "total": 1,
-      "title": "docs/zh_CN: fix KASAN SW_TAGS mode description",
+      "title": "docs/zh_CN: add usb/ohci translation",
       "patches": [
         {
-          "subject": "[PATCH] docs/zh_CN: fix KASAN SW_TAGS mode description",
-          "url": "https://lore.kernel.org/linux-doc/20260522075735.2022734-1-chengyaqiang@chengyaqiang.com/",
+          "subject": "[PATCH] docs/zh_CN: add usb/ohci translation",
+          "url": "https://lore.kernel.org/linux-doc/CAMnqnYxPHeXo6CsuKRGH=oixAsAa0z1_++266yzKW7qR6cqykw@mail.gmail.com/",
           "part": 1
         }
       ],
-      "source": "https://lore.kernel.org/linux-doc/20260522075735.2022734-1-chengyaqiang@chengyaqiang.com/",
-      "status": "applied",
-      "note": "Applied.",
+      "source": "https://lore.kernel.org/linux-doc/CAMnqnYxPHeXo6CsuKRGH=oixAsAa0z1_++266yzKW7qR6cqykw@mail.gmail.com/",
+      "status": "cooking",
+      "note": "Needs review.",
       "references": [],
       "previous_versions": []
     },
     {
-      "key": "663a6fe5231b",
-      "author": "Kefan Bai",
-      "email": "baikefan@leap-io-kernel.com",
-      "date": "2026-05-21",
-      "version": 7,
-      "total": 8,
-      "title": "docs/zh_CN: Add index.rst translation",
+      "key": "5a89cbf6936e",
+      "author": "Siwei Chen",
+      "email": "anka@stu.cdut.edu.cn",
+      "date": "2026-08-24",
+      "version": 5,
+      "total": 5,
+      "title": "docs/zh_CN: Add Chinese translations for five networking documents",
       "patches": [
         {
-          "subject": "[PATCH v7 1/8] docs/zh_CN: Add index.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/27f8c02f2d78b37dd5d640fbafaa60d0f0ea9c95.1779355170.git.baikefan@leap-io-kernel.com/",
+          "subject": "[PATCH v5 0/5] docs/zh_CN: Add Chinese translations for five networking documents",
+          "url": "https://lore.kernel.org/linux-doc/20260824043806.46731-1-anka@stu.cdut.edu.cn/",
+          "part": 0
+        },
+        {
+          "subject": "[PATCH v5 1/5] docs/zh_CN: Add networking team documentation Chinese translation",
+          "url": "https://lore.kernel.org/linux-doc/20260824043806.46731-2-anka@stu.cdut.edu.cn/",
           "part": 1
         },
         {
-          "subject": "[PATCH v7 2/8] docs/zh_CN: Add acm.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/9f865599e837c90d3048b9a8004efd65b2e3f9d3.1779355170.git.baikefan@leap-io-kernel.com/",
+          "subject": "[PATCH v5 2/5] docs/zh_CN: Add NIC SR-IOV APIs Chinese translation",
+          "url": "https://lore.kernel.org/linux-doc/20260824043806.46731-3-anka@stu.cdut.edu.cn/",
           "part": 2
         },
         {
-          "subject": "[PATCH v7 3/8] docs/zh_CN: Add authorization.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/81ba1ef4d22d6e5104614987b09dfce85af6ed0e.1779355170.git.baikefan@leap-io-kernel.com/",
+          "subject": "[PATCH v5 3/5] docs/zh_CN: Add Softnet Driver Issues Chinese translation",
+          "url": "https://lore.kernel.org/linux-doc/20260824043806.46731-4-anka@stu.cdut.edu.cn/",
           "part": 3
         },
         {
-          "subject": "[PATCH v7 4/8] docs/zh_CN: Add chipidea.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/62f3a25c6695bb3b6ef61d430e5858ba6513939e.1779355170.git.baikefan@leap-io-kernel.com/",
+          "subject": "[PATCH v5 4/5] docs/zh_CN: Add ipv6 Chinese translation",
+          "url": "https://lore.kernel.org/linux-doc/20260824043806.46731-5-anka@stu.cdut.edu.cn/",
           "part": 4
         },
         {
-          "subject": "[PATCH v7 5/8] docs/zh_CN: Add dwc3.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/1fd5678e36ebeb4f37e224a59136ef4f4dcc8340.1779355170.git.baikefan@leap-io-kernel.com/",
+          "subject": "[PATCH v5 5/5] docs/zh_CN: Add LSM/SELinux secid Chinese translation",
+          "url": "https://lore.kernel.org/linux-doc/20260824043806.46731-6-anka@stu.cdut.edu.cn/",
           "part": 5
-        },
-        {
-          "subject": "[PATCH v7 6/8] docs/zh_CN: Add ehci.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/7323e9def418415c3eab67bc539ceec0e986f3cb.1779355170.git.baikefan@leap-io-kernel.com/",
-          "part": 6
-        },
-        {
-          "subject": "[PATCH v7 7/8] docs/zh_CN: Add usbmon.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/f81ab69649d6cc2b0481db6eb73978e725005f3a.1779355170.git.baikefan@leap-io-kernel.com/",
-          "part": 7
-        },
-        {
-          "subject": "[PATCH v7 8/8] docs/zh_CN: Add CREDITS translation",
-          "url": "https://lore.kernel.org/linux-doc/634084009a0833a70efd269229919476ffe81b22.1779355170.git.baikefan@leap-io-kernel.com/",
-          "part": 8
         }
       ],
-      "source": "https://lore.kernel.org/linux-doc/27f8c02f2d78b37dd5d640fbafaa60d0f0ea9c95.1779355170.git.baikefan@leap-io-kernel.com/",
-      "status": "applied",
-      "note": "Applied.",
+      "source": "https://lore.kernel.org/linux-doc/20260824043806.46731-1-anka@stu.cdut.edu.cn/",
+      "status": "cooking",
+      "note": "Needs review.",
       "references": [],
       "previous_versions": [
         {
+          "version": 4,
+          "date": "2026-08-17",
+          "title": "docs/zh_CN: Add Chinese translations for five networking documents",
+          "source": "https://lore.kernel.org/linux-doc/20260817021340.17318-1-anka@stu.cdut.edu.cn/",
+          "archived_messages": 6
+        },
+        {
+          "version": 3,
+          "date": "2026-08-11",
+          "title": "docs/zh_CN: Add Chinese translations for five networking documents",
+          "source": "https://lore.kernel.org/linux-doc/20260811071200.54062-1-anka@stu.cdut.edu.cn/",
+          "archived_messages": 6
+        },
+        {
+          "version": 2,
+          "date": "2026-07-27",
+          "title": "docs/zh_CN: Add Chinese translations for five networking documents",
+          "source": "https://lore.kernel.org/linux-doc/20260727073538.56951-1-anka@stu.cdut.edu.cn/",
+          "archived_messages": 6
+        },
+        {
+          "version": 1,
+          "date": "2026-07-24",
+          "title": "docs/zh_CN: Add Chinese translations for five networking documents",
+          "source": "https://lore.kernel.org/linux-doc/cover.1784866896.git.businiaoanka@anka1.top/",
+          "archived_messages": 6
+        }
+      ]
+    },
+    {
+      "key": "1576c574d143",
+      "author": "Weijie Yuan",
+      "email": "wy@wyuan.org",
+      "date": "2026-08-23",
+      "version": 2,
+      "total": 5,
+      "title": "docs/zh_CN: update maintainer-pgp-guide translation",
+      "patches": [
+        {
+          "subject": "[PATCH v2 1/5] docs/zh_CN: update maintainer-pgp-guide translation",
+          "url": "https://lore.kernel.org/linux-doc/20260823-maintainer-pgp-guide-v2-1-bea33b2ece54@wyuan.org/",
+          "part": 1
+        },
+        {
+          "subject": "[PATCH v2 2/5] docs/zh_CN: clarify free Nitrokey requirements",
+          "url": "https://lore.kernel.org/linux-doc/20260823-maintainer-pgp-guide-v2-2-bea33b2ece54@wyuan.org/",
+          "part": 2
+        },
+        {
+          "subject": "[PATCH v2 3/5] docs/zh_CN: update maintainer-pgp-guide kernel.org link",
+          "url": "https://lore.kernel.org/linux-doc/20260823-maintainer-pgp-guide-v2-3-bea33b2ece54@wyuan.org/",
+          "part": 3
+        },
+        {
+          "subject": "[PATCH v2 4/5] docs/zh_CN: add kernel.org trust repository reference",
+          "url": "https://lore.kernel.org/linux-doc/20260823-maintainer-pgp-guide-v2-4-bea33b2ece54@wyuan.org/",
+          "part": 4
+        },
+        {
+          "subject": "[PATCH v2 5/5] docs/zh_CN: remove empty proofreader field from maintainer PGP guide",
+          "url": "https://lore.kernel.org/linux-doc/20260823-maintainer-pgp-guide-v2-5-bea33b2ece54@wyuan.org/",
+          "part": 5
+        }
+      ],
+      "source": "https://lore.kernel.org/linux-doc/20260823-maintainer-pgp-guide-v2-1-bea33b2ece54@wyuan.org/",
+      "status": "cooking",
+      "note": "Needs review.",
+      "references": [],
+      "previous_versions": [
+        {
+          "version": 1,
+          "date": "2026-08-20",
+          "title": "docs/zh_CN: update maintainer-pgp-guide translation",
+          "source": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-1-08e5e3602c04@wyuan.org/",
+          "archived_messages": 4
+        }
+      ]
+    },
+    {
+      "key": "8d3e28611619",
+      "author": "Doehyun Baek",
+      "email": "doehyunbaek@gmail.com",
+      "date": "2026-08-18",
+      "version": 8,
+      "total": 7,
+      "title": "docs/zh_CN: update DAMON documentation translation",
+      "patches": [
+        {
+          "subject": "[PATCH v8 0/7] docs/zh_CN: update DAMON documentation translation",
+          "url": "https://lore.kernel.org/linux-doc/20260818070358.455768-1-doehyunbaek@gmail.com/",
+          "part": 0
+        },
+        {
+          "subject": "[PATCH v8 1/7] docs/zh_CN: update DAMON design translation",
+          "url": "https://lore.kernel.org/linux-doc/20260818070358.455768-2-doehyunbaek@gmail.com/",
+          "part": 1
+        },
+        {
+          "subject": "[PATCH v8 2/7] docs/zh_CN: add DAMON_STAT usage translation",
+          "url": "https://lore.kernel.org/linux-doc/20260818070358.455768-3-doehyunbaek@gmail.com/",
+          "part": 2
+        },
+        {
+          "subject": "[PATCH v8 3/7] docs/zh_CN: update DAMON index translation",
+          "url": "https://lore.kernel.org/linux-doc/20260818070358.455768-4-doehyunbaek@gmail.com/",
+          "part": 3
+        },
+        {
+          "subject": "[PATCH v8 4/7] docs/zh_CN: update DAMON start translation",
+          "url": "https://lore.kernel.org/linux-doc/20260818070358.455768-5-doehyunbaek@gmail.com/",
+          "part": 4
+        },
+        {
+          "subject": "[PATCH v8 5/7] docs/zh_CN: update DAMON usage translation",
+          "url": "https://lore.kernel.org/linux-doc/20260818070358.455768-6-doehyunbaek@gmail.com/",
+          "part": 5
+        },
+        {
+          "subject": "[PATCH v8 6/7] docs/zh_CN: update DAMON reclaim translation",
+          "url": "https://lore.kernel.org/linux-doc/20260818070358.455768-7-doehyunbaek@gmail.com/",
+          "part": 6
+        },
+        {
+          "subject": "[PATCH v8 7/7] docs/zh_CN: update DAMON LRU sort translation",
+          "url": "https://lore.kernel.org/linux-doc/20260818070358.455768-8-doehyunbaek@gmail.com/",
+          "part": 7
+        }
+      ],
+      "source": "https://lore.kernel.org/linux-doc/20260818070358.455768-1-doehyunbaek@gmail.com/",
+      "status": "cooking",
+      "note": "Needs review.",
+      "references": [],
+      "previous_versions": [
+        {
+          "version": 7,
+          "date": "2026-08-12",
+          "title": "docs/zh_CN: update DAMON documentation translation",
+          "source": "https://lore.kernel.org/linux-doc/20260812065914.3071433-1-doehyunbaek@gmail.com/",
+          "archived_messages": 8
+        },
+        {
           "version": 6,
-          "date": "2026-05-10",
-          "title": "docs/zh_CN: Add index.rst translation",
-          "source": "https://lore.kernel.org/linux-doc/8446bc5a1dbebc5ef5fb94cba14e91e1a395cf6a.1778415392.git.baikefan@leap-io-kernel.com/",
+          "date": "2026-07-08",
+          "title": "docs/zh_CN: update DAMON translations",
+          "source": "https://lore.kernel.org/linux-doc/20260708073246.1652828-1-doehyunbaek@gmail.com/",
           "archived_messages": 8
         }
       ]
     },
     {
-      "key": "12ac7cc2a5e5",
-      "author": "Yan Zhu",
-      "email": "zhuyan2015@qq.com",
-      "date": "2026-04-22",
-      "version": 5,
-      "total": 1,
-      "title": "docs/zh_CN: add module-signing Chinese translation",
+      "key": "60a49356c7d1",
+      "author": "Weijie Yuan",
+      "email": "wy@wyuan.org",
+      "date": "2026-08-16",
+      "version": 3,
+      "total": 2,
+      "title": "docs/zh_CN: translate process/applying-patches.rst into Chinese",
       "patches": [
         {
-          "subject": "[PATCH v5] docs/zh_CN: add module-signing Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_654B91A551D6E7DDF311CF580D42E6FB8F06@qq.com/",
-          "part": 1
-        }
-      ],
-      "source": "https://lore.kernel.org/linux-doc/tencent_654B91A551D6E7DDF311CF580D42E6FB8F06@qq.com/",
-      "status": "applied",
-      "note": "Applied.",
-      "references": [],
-      "previous_versions": [
-        {
-          "version": 4,
-          "date": "2026-04-18",
-          "title": "docs/zh_CN: add module-signing Chinese translation",
-          "source": "https://lore.kernel.org/linux-doc/tencent_193EEE328E64C6F610B4DE835DC22CAFB209@qq.com/",
-          "archived_messages": 1
-        },
-        {
-          "version": 3,
-          "date": "2026-04-18",
-          "title": "docs/zh_CN: add module-signing Chinese translation",
-          "source": "https://lore.kernel.org/linux-doc/tencent_99B2EE128E02C6CC1120DE135D4A2DA5B309@qq.com/",
-          "archived_messages": 1
-        },
-        {
-          "version": 2,
-          "date": "2026-04-13",
-          "title": "docs/zh_CN: add module-signing Chinese translation",
-          "source": "https://lore.kernel.org/linux-doc/tencent_0101EEFDDBC5D532222BFE0EF2487DCC0805@qq.com/",
-          "archived_messages": 1
-        },
-        {
-          "version": 1,
-          "date": "2026-04-01",
-          "title": "docs/zh_CN: add module-signing Chinese translation",
-          "source": "https://lore.kernel.org/linux-doc/tencent_1BF5E860CC01A1E23DC405DD92314BE16E05@qq.com/",
-          "archived_messages": 1
-        }
-      ]
-    },
-    {
-      "key": "cb31d3335fcf",
-      "author": "Dongliang Mu",
-      "email": "dzm91@hust.edu.cn",
-      "date": "2026-04-20",
-      "version": 1,
-      "total": 1,
-      "title": "docs/zh_CN: restructure how-to.rst patch submission workflow",
-      "patches": [
-        {
-          "subject": "[PATCH] docs/zh_CN: restructure how-to.rst patch submission workflow",
-          "url": "https://lore.kernel.org/linux-doc/20260420115647.2718959-1-dzm91@hust.edu.cn/",
-          "part": 1
-        }
-      ],
-      "source": "https://lore.kernel.org/linux-doc/20260420115647.2718959-1-dzm91@hust.edu.cn/",
-      "status": "applied",
-      "note": "Applied.",
-      "references": [],
-      "previous_versions": []
-    },
-    {
-      "key": "0bba29f92a85",
-      "author": "Dongliang Mu",
-      "email": "dzm91@hust.edu.cn",
-      "date": "2026-04-18",
-      "version": 1,
-      "total": 1,
-      "title": "docs/zh_CN: polish how-to.rst",
-      "patches": [
-        {
-          "subject": "[PATCH] docs/zh_CN: polish how-to.rst",
-          "url": "https://lore.kernel.org/linux-doc/20260418091014.2064780-1-dzm91@hust.edu.cn/",
-          "part": 1
-        }
-      ],
-      "source": "https://lore.kernel.org/linux-doc/20260418091014.2064780-1-dzm91@hust.edu.cn/",
-      "status": "applied",
-      "note": "Applied.",
-      "references": [],
-      "previous_versions": []
-    },
-    {
-      "key": "efe411383ddc",
-      "author": "Ben Guo",
-      "email": "ben.guo@openatom.club",
-      "date": "2026-04-16",
-      "version": 1,
-      "total": 1,
-      "title": "docs/zh_CN: add --no-merges to git log example in how-to.rst",
-      "patches": [
-        {
-          "subject": "[PATCH] docs/zh_CN: add --no-merges to git log example in how-to.rst",
-          "url": "https://lore.kernel.org/linux-doc/20260416042647.3646595-1-ben.guo@openatom.club/",
-          "part": 1
-        }
-      ],
-      "source": "https://lore.kernel.org/linux-doc/20260416042647.3646595-1-ben.guo@openatom.club/",
-      "status": "applied",
-      "note": "Applied.",
-      "references": [],
-      "previous_versions": []
-    },
-    {
-      "key": "430933e090eb",
-      "author": "Ben Guo",
-      "email": "ben.guo@openatom.club",
-      "date": "2026-04-10",
-      "version": 2,
-      "total": 4,
-      "title": "docs/zh_CN: update rust/ subsystem translations",
-      "patches": [
-        {
-          "subject": "[PATCH v2 0/4] docs/zh_CN: update rust/ subsystem translations",
-          "url": "https://lore.kernel.org/linux-doc/cover.1775786987.git.ben.guo@openatom.club/",
+          "subject": "[PATCH v3 0/2] docs/zh_CN: translate process/applying-patches.rst into Chinese",
+          "url": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-0-45e3bd2b1ccc@wyuan.org/",
           "part": 0
         },
         {
-          "subject": "[PATCH v2 1/4] docs/zh_CN: update rust/arch-support.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/bc2b5eb22841e2d2cbec5626d50afd412684f572.1775786987.git.ben.guo@openatom.club/",
+          "subject": "[PATCH v3 1/2] docs/zh_CN: add process/applying-patches Chinese translation",
+          "url": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-1-45e3bd2b1ccc@wyuan.org/",
           "part": 1
         },
         {
-          "subject": "[PATCH v2 2/4] docs/zh_CN: update rust/coding-guidelines.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/325c883beeb39f33e16398679bcb17d8c4ec7564.1775786987.git.ben.guo@openatom.club/",
+          "subject": "[PATCH v3 2/2] docs/zh_CN: link to Chinese applying-patches translation",
+          "url": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-2-45e3bd2b1ccc@wyuan.org/",
           "part": 2
-        },
-        {
-          "subject": "[PATCH v2 3/4] docs/zh_CN: update rust/quick-start.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/8fcf0af3e5cddaa754de98098360825c9b820fb7.1775786987.git.ben.guo@openatom.club/",
-          "part": 3
-        },
-        {
-          "subject": "[PATCH v2 4/4] docs/zh_CN: update rust/index.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/9b5c43b963d74ac39f3d8d1c0d4178c7afb5c48b.1775786987.git.ben.guo@openatom.club/",
-          "part": 4
         }
       ],
-      "source": "https://lore.kernel.org/linux-doc/cover.1775786987.git.ben.guo@openatom.club/",
-      "status": "applied",
-      "note": "Applied.",
+      "source": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-0-45e3bd2b1ccc@wyuan.org/",
+      "status": "cooking",
+      "note": "Needs review.",
       "references": [],
       "previous_versions": [
         {
+          "version": 2,
+          "date": "2026-08-15",
+          "title": "docs/zh_CN: translate process/applying-patches.rst into Chinese",
+          "source": "https://lore.kernel.org/linux-doc/20260815-apply-patches-v2-0-3fdd873d31cc@wyuan.org/",
+          "archived_messages": 3
+        },
+        {
           "version": 1,
-          "date": "2026-04-08",
-          "title": "docs/zh_CN: update rust/ subsystem translations",
-          "source": "https://lore.kernel.org/linux-doc/cover.1775619061.git.ben.guo@openatom.club/",
-          "archived_messages": 5
+          "date": "2026-07-17",
+          "title": "docs/zh_CN: translate process/applying-patches.rst into Chinese",
+          "source": "https://lore.kernel.org/linux-doc/cover.1784289654.git.wy@wyuan.org/",
+          "archived_messages": 4
         }
       ]
     },
     {
-      "key": "d0f03483694f",
-      "author": "Song Hongyi",
-      "email": "szpcq123@gmail.com",
-      "date": "2026-03-11",
-      "version": 2,
-      "total": 1,
-      "title": "docs/zh_CN: sync process/2.Process.rst with English version",
+      "key": "78ffab15edc9",
+      "author": "Chen Miao",
+      "email": "chenmiao.ku@gmail.com",
+      "date": "2026-08-14",
+      "version": 4,
+      "total": 6,
+      "title": "docs/zh_CN: doc-guide: document macOS Sphinx setup",
       "patches": [
         {
-          "subject": "[PATCH v2] docs/zh_CN: sync process/2.Process.rst with English version",
-          "url": "https://lore.kernel.org/linux-doc/20260311123107.329769-1-szpcq123@gmail.com/",
+          "subject": "[PATCH v4 5/6] docs/zh_CN: doc-guide: document macOS Sphinx setup",
+          "url": "https://lore.kernel.org/linux-doc/20260814214419.49925-6-chenmiao.ku@gmail.com/",
+          "part": 5
+        },
+        {
+          "subject": "[PATCH v4 6/6] docs/zh_CN: how-to: document case-sensitive APFS setup",
+          "url": "https://lore.kernel.org/linux-doc/20260814214419.49925-7-chenmiao.ku@gmail.com/",
+          "part": 6
+        }
+      ],
+      "source": "https://lore.kernel.org/linux-doc/20260814214419.49925-6-chenmiao.ku@gmail.com/",
+      "status": "cooking",
+      "note": "Needs review.",
+      "references": [],
+      "previous_versions": [
+        {
+          "version": 3,
+          "date": "2026-08-12",
+          "title": "docs/zh_CN: doc-guide: document macOS Sphinx setup",
+          "source": "https://lore.kernel.org/linux-doc/20260812182327.53694-6-chenmiao.ku@gmail.com/",
+          "archived_messages": 2
+        },
+        {
+          "version": 2,
+          "date": "2026-08-10",
+          "title": "docs/zh_CN: doc-guide: document macOS Sphinx setup",
+          "source": "https://lore.kernel.org/linux-doc/20260810143311.57775-5-chenmiao.ku@gmail.com/",
+          "archived_messages": 2
+        }
+      ]
+    },
+    {
+      "key": "31f1399ade4e",
+      "author": "Ye Liu",
+      "email": "ye.liu@linux.dev",
+      "date": "2026-08-06",
+      "version": 2,
+      "total": 1,
+      "title": "docs/zh_CN: sync page_table_check.rst translation",
+      "patches": [
+        {
+          "subject": "[PATCH v2] docs/zh_CN: sync page_table_check.rst translation",
+          "url": "https://lore.kernel.org/linux-doc/20260806013055.2690464-1-ye.liu@linux.dev/",
           "part": 1
         }
       ],
-      "source": "https://lore.kernel.org/linux-doc/20260311123107.329769-1-szpcq123@gmail.com/",
-      "status": "applied",
-      "note": "Applied.",
+      "source": "https://lore.kernel.org/linux-doc/20260806013055.2690464-1-ye.liu@linux.dev/",
+      "status": "cooking",
+      "note": "Needs review.",
       "references": [],
       "previous_versions": [
         {
           "version": 1,
-          "date": "2026-02-25",
-          "title": "docs/zh_CN: sync process/2.Process.rst with English version",
-          "source": "https://lore.kernel.org/linux-doc/20260225151013.200635-1-szpcq123@gmail.com/",
+          "date": "2026-08-05",
+          "title": "docs/zh_CN: sync page_table_check.rst translation",
+          "source": "https://lore.kernel.org/linux-doc/20260805122224.2512983-1-ye.liu@linux.dev/",
           "archived_messages": 1
         }
       ]
     },
     {
-      "key": "a6572fcdf8c9",
-      "author": "LIU Haoyang",
-      "email": "tttturtleruss@gmail.com",
-      "date": "2026-03-05",
-      "version": 2,
+      "key": "8ebf5eb46aef",
+      "author": "cuishuang",
+      "email": "imcusg@gmail.com",
+      "date": "2026-07-22",
+      "version": 3,
       "total": 1,
-      "title": "docs/zh_CN: fix an inconsistent statement in dev-tools/testing-overview",
+      "title": "docs/zh_CN: Add configurable error injection translation",
       "patches": [
         {
-          "subject": "[PATCH V2] docs/zh_CN: fix an inconsistent statement in dev-tools/testing-overview",
-          "url": "https://lore.kernel.org/linux-doc/20260305201100.10119-1-tttturtleruss@gmail.com/",
+          "subject": "[PATCH v3] docs/zh_CN: Add configurable error injection translation",
+          "url": "https://lore.kernel.org/linux-doc/20260722123240.22979-1-imcusg@gmail.com/",
           "part": 1
         }
       ],
-      "source": "https://lore.kernel.org/linux-doc/20260305201100.10119-1-tttturtleruss@gmail.com/",
-      "status": "applied",
-      "note": "Applied.",
+      "source": "https://lore.kernel.org/linux-doc/20260722123240.22979-1-imcusg@gmail.com/",
+      "status": "cold",
+      "note": "No update for over one month.",
       "references": [],
       "previous_versions": [
         {
-          "version": 1,
-          "date": "2026-03-05",
-          "title": "docs/zh_CN: fix an inconsistent statement in dev-tools/testing-overview",
-          "source": "https://lore.kernel.org/linux-doc/20260305192048.16405-1-tttturtleruss@gmail.com/",
+          "version": 2,
+          "date": "2026-07-22",
+          "title": "docs/zh_CN: Add configurable error injection translation",
+          "source": "https://lore.kernel.org/linux-doc/20260722100053.71691-1-imcusg@gmail.com/",
           "archived_messages": 1
         }
       ]
@@ -446,277 +512,6 @@
         }
       ],
       "source": "https://lore.kernel.org/linux-doc/4e5e728877c77a89f6c59e89c88ba8ffa8842643.1783609005.git.wy@wyuan.org/",
-      "status": "cooking",
-      "note": "Needs review.",
-      "references": [],
-      "previous_versions": []
-    },
-    {
-      "key": "d7621570f1b7",
-      "author": "Doehyun Baek",
-      "email": "doehyunbaek@gmail.com",
-      "date": "2026-07-08",
-      "version": 6,
-      "total": 7,
-      "title": "docs/zh_CN: update DAMON translations",
-      "patches": [
-        {
-          "subject": "[PATCH v6 0/7] docs/zh_CN: update DAMON translations",
-          "url": "https://lore.kernel.org/linux-doc/20260708073246.1652828-1-doehyunbaek@gmail.com/",
-          "part": 0
-        },
-        {
-          "subject": "[PATCH v6 1/7] docs/zh_CN: update DAMON design translation",
-          "url": "https://lore.kernel.org/linux-doc/20260708073246.1652828-2-doehyunbaek@gmail.com/",
-          "part": 1
-        },
-        {
-          "subject": "[PATCH v6 2/7] docs/zh_CN: add DAMON_STAT usage translation",
-          "url": "https://lore.kernel.org/linux-doc/20260708073246.1652828-3-doehyunbaek@gmail.com/",
-          "part": 2
-        },
-        {
-          "subject": "[PATCH v6 3/7] docs/zh_CN: update DAMON index translation",
-          "url": "https://lore.kernel.org/linux-doc/20260708073246.1652828-4-doehyunbaek@gmail.com/",
-          "part": 3
-        },
-        {
-          "subject": "[PATCH v6 4/7] docs/zh_CN: update DAMON start translation",
-          "url": "https://lore.kernel.org/linux-doc/20260708073246.1652828-5-doehyunbaek@gmail.com/",
-          "part": 4
-        },
-        {
-          "subject": "[PATCH v6 5/7] docs/zh_CN: update DAMON usage translation",
-          "url": "https://lore.kernel.org/linux-doc/20260708073246.1652828-6-doehyunbaek@gmail.com/",
-          "part": 5
-        },
-        {
-          "subject": "[PATCH v6 6/7] docs/zh_CN: update DAMON reclaim translation",
-          "url": "https://lore.kernel.org/linux-doc/20260708073246.1652828-7-doehyunbaek@gmail.com/",
-          "part": 6
-        },
-        {
-          "subject": "[PATCH v6 7/7] docs/zh_CN: update DAMON LRU sort translation",
-          "url": "https://lore.kernel.org/linux-doc/20260708073246.1652828-8-doehyunbaek@gmail.com/",
-          "part": 7
-        }
-      ],
-      "source": "https://lore.kernel.org/linux-doc/20260708073246.1652828-1-doehyunbaek@gmail.com/",
-      "status": "cooking",
-      "note": "Needs review.",
-      "references": [],
-      "previous_versions": [
-        {
-          "version": 4,
-          "date": "2026-06-09",
-          "title": "docs/zh_CN: update DAMON documentation translation",
-          "source": "https://lore.kernel.org/linux-doc/ef9e2347564b2ffebe231b20e4da049cbceb2374.1781015560.git.doehyunbaek@gmail.com/",
-          "archived_messages": 1
-        },
-        {
-          "version": 3,
-          "date": "2026-06-08",
-          "title": "docs/zh_CN: update DAMON usage Chinese translation",
-          "source": "https://lore.kernel.org/linux-doc/20260608065745.1587885-2-doehyunbaek@gmail.com/",
-          "archived_messages": 1
-        },
-        {
-          "version": 2,
-          "date": "2026-06-08",
-          "title": "docs/zh_CN: update DAMON usage Chinese translation",
-          "source": "https://lore.kernel.org/linux-doc/20260608060302.1564003-2-doehyunbaek@gmail.com/",
-          "archived_messages": 1
-        },
-        {
-          "version": 1,
-          "date": "2026-05-23",
-          "title": "docs/zh_CN: update DAMON usage sysfs documentation",
-          "source": "https://lore.kernel.org/linux-doc/20260523094420.741003-2-doehyunbaek@gmail.com/",
-          "archived_messages": 1
-        }
-      ]
-    },
-    {
-      "key": "0c8a552c1114",
-      "author": "Jiandong Qiu",
-      "email": "qiujiandong1998@gmail.com",
-      "date": "2026-07-06",
-      "version": 3,
-      "total": 2,
-      "title": "docs/zh_CN: update translation of doc-guide/sphinx.rst",
-      "patches": [
-        {
-          "subject": "[PATCH v3 0/2] docs/zh_CN: update translation of doc-guide/sphinx.rst",
-          "url": "https://lore.kernel.org/linux-doc/20260706151358.2103703-1-qiujiandong1998@gmail.com/",
-          "part": 0
-        },
-        {
-          "subject": "[PATCH v3 1/2] docs/zh_CN: add process/changes.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/20260706151358.2103703-2-qiujiandong1998@gmail.com/",
-          "part": 1
-        },
-        {
-          "subject": "[PATCH v3 2/2] docs/zh_CN: update sphinx.rst translation",
-          "url": "https://lore.kernel.org/linux-doc/20260706151358.2103703-3-qiujiandong1998@gmail.com/",
-          "part": 2
-        }
-      ],
-      "source": "https://lore.kernel.org/linux-doc/20260706151358.2103703-1-qiujiandong1998@gmail.com/",
-      "status": "cooking",
-      "note": "Needs review.",
-      "references": [],
-      "previous_versions": [
-        {
-          "version": 2,
-          "date": "2026-06-21",
-          "title": "docs/zh_CN: update translations for process/changes.rst and sphinx.rst",
-          "source": "https://lore.kernel.org/linux-doc/20260621131215.1303439-1-qiujiandong1998@gmail.com/",
-          "archived_messages": 3
-        },
-        {
-          "version": 1,
-          "date": "2026-06-19",
-          "title": "docs/zh_CN: update translation of doc-guide/sphinx.rst",
-          "source": "https://lore.kernel.org/linux-doc/20260619140245.1982921-1-qiujiandong1998@gmail.com/",
-          "archived_messages": 4
-        }
-      ]
-    },
-    {
-      "key": "b9ac27ffbc74",
-      "author": "Yan Zhu",
-      "email": "zhuyan2015@qq.com",
-      "date": "2026-06-12",
-      "version": 1,
-      "total": 10,
-      "title": "docs/zh_CN: add LSM admin-guide Chinese translation",
-      "patches": [
-        {
-          "subject": "[PATCH 00/10] docs/zh_CN: add LSM admin-guide Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_001080DF135CEE2CD1B260EFA08E3CC71A09@qq.com/",
-          "part": 0
-        },
-        {
-          "subject": "[PATCH 01/10] docs/zh_CN: add LSM/index Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_7080BF6BB8F05936649DDC091FFD8C45210A@qq.com/",
-          "part": 1
-        },
-        {
-          "subject": "[PATCH 02/10] docs/zh_CN: add LSM/apparmor Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_F3D55D1A2C8FB266EE628EF8C68C10DEDF09@qq.com/",
-          "part": 2
-        },
-        {
-          "subject": "[PATCH 03/10] docs/zh_CN: add LSM/LoadPin Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_4D8EDAC71A10FADF8B5C682C57B266EE1A09@qq.com/",
-          "part": 3
-        },
-        {
-          "subject": "[PATCH 04/10] docs/zh_CN: add LSM/SELinux Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_03EFCA2E14961D59A37729478C633B085008@qq.com/",
-          "part": 4
-        },
-        {
-          "subject": "[PATCH 05/10] docs/zh_CN: add LSM/Smack Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_BABBA8A3BDB14504B377071745CBB3ACB607@qq.com/",
-          "part": 5
-        },
-        {
-          "subject": "[PATCH 06/10] docs/zh_CN: add LSM/tomoyo Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_584BF9CEE8686B0C1981EF5DCDE5CAB22005@qq.com/",
-          "part": 6
-        },
-        {
-          "subject": "[PATCH 07/10] docs/zh_CN: add LSM/Yama Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_D565966559E777D84773634D0813EFD52E08@qq.com/",
-          "part": 7
-        },
-        {
-          "subject": "[PATCH 08/10] docs/zh_CN: add LSM/SafeSetID Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_9C8FD8C64E11E0DED95D122C95B326EE1209@qq.com/",
-          "part": 8
-        },
-        {
-          "subject": "[PATCH 09/10] docs/zh_CN: add LSM/ipe Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_DADDE291CA580302EB7BB40B83A552D6F006@qq.com/",
-          "part": 9
-        },
-        {
-          "subject": "[PATCH 10/10] docs/zh_CN: add LSM/landlock Chinese translation",
-          "url": "https://lore.kernel.org/linux-doc/tencent_B27B8B8B80A567D6C21DDDD1C6981982DE06@qq.com/",
-          "part": 10
-        }
-      ],
-      "source": "https://lore.kernel.org/linux-doc/tencent_001080DF135CEE2CD1B260EFA08E3CC71A09@qq.com/",
-      "status": "cold",
-      "note": "No update for over one month.",
-      "references": [],
-      "previous_versions": []
-    },
-    {
-      "key": "451ee7c72053",
-      "author": "Kefan Bai",
-      "email": "baikefan@leap-io-kernel.com",
-      "date": "2026-06-01",
-      "version": 4,
-      "total": 1,
-      "title": "docs/zh_CN: usb: refine translated wording and formatting",
-      "patches": [
-        {
-          "subject": "[PATCH v4] docs/zh_CN: usb: refine translated wording and formatting",
-          "url": "https://lore.kernel.org/linux-doc/20260601082652.650303-1-baikefan@leap-io-kernel.com/",
-          "part": 1
-        }
-      ],
-      "source": "https://lore.kernel.org/linux-doc/20260601082652.650303-1-baikefan@leap-io-kernel.com/",
-      "status": "cold",
-      "note": "No update for over one month.",
-      "references": [],
-      "previous_versions": [
-        {
-          "version": 3,
-          "date": "2026-06-01",
-          "title": "docs/zh_CN: usb: refine translated wording and formatting",
-          "source": "https://lore.kernel.org/linux-doc/20260601033945.555210-1-baikefan@leap-io-kernel.com/",
-          "archived_messages": 1
-        },
-        {
-          "version": 2,
-          "date": "2026-05-31",
-          "title": "docs/zh_CN: usb: cleanup translated wording and formatting",
-          "source": "https://lore.kernel.org/linux-doc/20260531140605.246446-1-baikefan@leap-io-kernel.com/",
-          "archived_messages": 1
-        },
-        {
-          "version": 1,
-          "date": "2026-05-31",
-          "title": "docs/zh_CN: usb: cleanup translated wording and formatting",
-          "source": "https://lore.kernel.org/linux-doc/20260531130648.242262-1-baikefan@leap-io-kernel.com/",
-          "archived_messages": 1
-        }
-      ]
-    },
-    {
-      "key": "ee22f10eb9e8",
-      "author": "Xingqiu Xu",
-      "email": "hilbertanjou83@gmail.com",
-      "date": "2026-01-06",
-      "version": 3,
-      "total": 7,
-      "title": "docs/zh_CN: Translate timers/no_hz.rst",
-      "patches": [
-        {
-          "subject": "[PATCH v3 6/7] docs/zh_CN: Translate timers/no_hz.rst",
-          "url": "https://lore.kernel.org/linux-doc/b3d77a7eef83314f34d41d6df584a24229dbe52a.1767725479.git.hilbertanjou83@gmail.com/",
-          "part": 6
-        },
-        {
-          "subject": "[PATCH v3 7/7] docs/zh_CN: Translate timers delay_sleep_functions",
-          "url": "https://lore.kernel.org/linux-doc/2cdd84d575e230094c96dd56b720c15e72145c46.1767725479.git.hilbertanjou83@gmail.com/",
-          "part": 7
-        }
-      ],
-      "source": "https://lore.kernel.org/linux-doc/b3d77a7eef83314f34d41d6df584a24229dbe52a.1767725479.git.hilbertanjou83@gmail.com/",
       "status": "cold",
       "note": "No update for over one month.",
       "references": [],
